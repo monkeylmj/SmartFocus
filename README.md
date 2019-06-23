@@ -1,11 +1,18 @@
 # AutoFocusFrameLayout
-![FocusUI](./snapshot/focus_ui.gif)
 
 统一的焦点显示框架：
 
 1、对框架中的控件应用统一的焦点效果，而不用去重复指定selector资源
 
 2、可以自定义动画形式焦点效果（selector做不到）
+
+效果如图：
+
+![FocusUI](./snapshot/focus_ui.gif)
+
+![FocusUI2](./snapshot/focus_demo.gif)
+
+
  
 ## 使用方法：
 
@@ -22,6 +29,7 @@
 **注意**
 
 1、如果你的布局中用到了`RecyclerView`，请使用`com.monkeyliu.smartfocus.FocusRecyclerView`代替.
+
 2、获取焦点的View会进行放大(1.1倍)，有可能会被父布局裁减掉，可能需要在你的布局结构中调试添加 `android:clipChildren="false"` 和
 `android:clipToPadding="false"`属性来保证不被裁剪
 
@@ -55,7 +63,7 @@ autoFocusFrameLayout.setFocusBorderBuilder(focusBorderBuilder);
 ```
 
 ## 更多支持
-1. 对于某些View，不想使用统一的焦点效果，而想使用自己定义的selector中的效果：
+1、对于某些View，不想使用统一的焦点效果，而想使用自己定义的selector中的效果：
 
 给View添加 `android:tag="ignore_focus"` 即可，例如
 ```xml
@@ -67,7 +75,7 @@ autoFocusFrameLayout.setFocusBorderBuilder(focusBorderBuilder);
 ```
 
 
-2. 对于某些Focusable的View，想针对其某个子View应用焦点效果:
+2、对于某些Focusable的View，想针对其某个子View应用焦点效果:
 
 给相应的子View添加 `android:tag="focus"` 即可，例如
 ```xml
@@ -91,4 +99,4 @@ autoFocusFrameLayout.setFocusBorderBuilder(focusBorderBuilder);
 
 </LinearLayout>
 ```
-虽然LinearLayout获取到焦点，但是焦点效果是应用在ImageView上.
+这样虽然LinearLayout获取到焦点，但是焦点效果是应用在ImageView上.
