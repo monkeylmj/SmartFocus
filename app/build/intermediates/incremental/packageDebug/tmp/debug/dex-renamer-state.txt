@@ -1,0 +1,4 @@
+#Sun Jun 23 13:25:54 CST 2019
+base.0=/Users/monkey/FlutterProjects/SmartFocus/app/build/intermediates/dex/debug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

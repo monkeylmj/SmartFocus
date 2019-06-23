@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="focus_border_width">2px</dimen>
+    <dimen name="focus_border_padding">2dp</dimen>
+    <dimen name="focus_border_radius">4dp</dimen>
+</resources>

@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+color colorFocusBorder
+dimen focus_border_padding
+dimen focus_border_radius
+dimen focus_border_width
+string app_name
